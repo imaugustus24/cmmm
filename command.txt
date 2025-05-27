@@ -18,3 +18,7 @@ httrack "http://example.com"
 
 gobuster dir -u <IP> -w <path> -x php,txt,html
 
+cewl http://example.com -w wordlist.txt
+
+nikto -h https://example.com -useragent "Mozilla/5.0 (Windows NT 10.0; Win64; x64)" -Tuning x -timeout 10 -evasion 1
+
