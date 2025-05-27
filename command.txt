@@ -1,0 +1,20 @@
+sudo dmitry -w duk.ac.in -s -e
+
+theHarvester -d duk.ac.in -b all
+
+sudo netdiscover -r 192.168.0.0/24
+
+host duk.ac.in
+
+host -t mx duk.ac.in
+
+nslookup duk.ac.in
+
+nslookup -query=MX duk.ac.in
+
+dig duk.ac.in MX
+
+httrack "http://example.com" 
+
+gobuster dir -u <IP> -w <path> -x php,txt,html
+
